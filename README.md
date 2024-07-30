@@ -1,5 +1,5 @@
-##```Git Hub users Searches for repositories```
-
+```Git Hub users Searches for repositories```
+##
 **Dark Mode Github**
 
 ![alt](/screenshots/Desktop_solution.png)
