@@ -6,6 +6,7 @@ const moonIcon = document.getElementById('moon');
 const sunIcon = document.getElementById('sun');
 const githubStatsContainer = document.getElementById('github-stats-container');
 const githubStatsIframe = document.getElementById('github-stats-iframe');
+const githubStatsImg = document.getElementById("github-stats-img");
 
 const userSection = document.getElementById('user-section');
 
@@ -27,9 +28,10 @@ function submitForm(e) {
     fetchUser(githubUsernameJoined);
     // Update the iframe source URL with the new username
     githubStatsIframe.src = `https://github-readme-stats.vercel.app/api?username=${githubUsernameJoined}`;
+    githubStatsImg.src = `https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsernameJoined}&theme=omni&hide_border=true&border_radius=15px`;
 
     // Display the GitHub Stats container
-    githubStatsContainer.style.display = 'block';
+    githubStatsContainer.style = "display:flex; gap:30px;";
     userSection.style.display = 'flex';
   }
 
